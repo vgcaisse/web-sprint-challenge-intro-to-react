@@ -4,15 +4,12 @@ import React from "react"
 
 export default function Character(props) {
     console.log(props);
+    
+    // const { name } = props;
 
     return (
         <div className="Character">
-            <h1>{props.name}</h1>
-            {/* {
-                char.map((char) => {
-                    <h1>{props.name}</h1>
-                })                
-            } */}
+            <h2>{props.name}</h2>
         </div>
     )
 }
