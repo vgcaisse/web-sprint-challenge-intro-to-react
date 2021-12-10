@@ -4,15 +4,14 @@ import styled from "styled-components";
 
 const StyledH2 = styled.h2`
     color: teal;
+    border-bottom: 8px dotted green;
 ` 
 
 export default function Character(props) {
     console.log(props);
-    
-    // const { name } = props;
 
     return (
-        <div className="luke">
+        <div className="Character-Names">
             <StyledH2>{props.name}</StyledH2>
         </div>
     )

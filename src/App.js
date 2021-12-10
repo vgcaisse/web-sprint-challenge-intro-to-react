@@ -13,9 +13,7 @@ function App(){
   // sync up with, if any.
 
   const STdata = 'https://swapi.dev/api/people/';
-  const [starWars, setStarWarsData] = useState([])
-  // const characters =  props.characters;
- 
+  const [starWars, setStarWarsData] = useState({}); 
 
   useEffect(() => {
     const getData = () => {
@@ -34,14 +32,13 @@ function App(){
   return (
     <div className="App">      
       
-      {/* <Img url={starWars.url} alt={starWars.title}/> */}
       <h1 className="Header">Characters</h1>
-      <Character name={starWars[0].name} />
-      <Character name={starWars[1].name} />
-      <Character name={starWars[2].name} />
-      <Character name={starWars[3].name} />
-      <Character name={starWars[4].name} />
-      <Character name={starWars[5].name} />      
+      <Character char={starWars[0].name} />     
+      <Character char={starWars[1].name} />
+      <Character char={starWars[2].name} />
+      <Character char={starWars[3].name} />
+      <Character char={starWars[4].name} />
+      <Character char={starWars[5].name} />      
     
     </div>
   );
