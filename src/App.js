@@ -32,12 +32,16 @@ function App(){
   }, []);
 
   return (
-    <div className="App">
-      
+    <div className="App">      
       
       {/* <Img url={starWars.url} alt={starWars.title}/> */}
       <h1 className="Header">Characters</h1>
-      <Character name={starWars.name} />
+      <Character name={starWars[0].name} />
+      <Character name={starWars[1].name} />
+      <Character name={starWars[2].name} />
+      <Character name={starWars[3].name} />
+      <Character name={starWars[4].name} />
+      <Character name={starWars[5].name} />      
     
     </div>
   );
